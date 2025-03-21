@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Foodie place
+        </title>
+       <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+
+}
+h1{
+    text-align: center;
+    color: green;
+    padding: 20px;
+
+}
+nav{
+    background-color: lime;
+    display: grid;
+    place-items: center;
+
+}
+nav ul{
+    list-style-type: none;
+
+}
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+  text-decoration: none;
+  color:black;
+  transition: 0.2s ease-in;
+  font-size: 18px;
+
+}
+nav ul a:hover{
+    background-color: green;
+    color: white;
+
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding:30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.item img:hover{
+    transform:scale(1.04);
+
+}
+.item h4{
+ padding: 5 px;
+ text-align: center;
+
+}
+.item button{
+    padding: 5px 30px;
+    border:none;
+    outline:none;
+    background-color: green;
+    color: white;
+    cursor:pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    display: block;
+
+}
+.item button:hover{
+    transform:scale(1.04);
+
+}
+       </style>
+        
+        
+    </head>
+    
+    <body>
+      <h1>Foodie place</h1>
+        <nav>
+          <ul>
+           <a href="#"><li>Home</li> </a>
+           <a href="#"><li>Order</li> </a>
+           <a href="#"><li>Near</li> </a>
+           <a href="#"><li>About</li> </a>
+
+
+          </ul>
+        </nav>
+        <section class="items">
+          
+          <div class="item">
+            <img src="https://c4.wallpaperflare.com/wallpaper/234/543/684/food-pizza-wallpaper-preview.jpg">
+            <h4>Pizza</h4>
+            <button >Order</button>
+          </div>
+          
+          <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQzY7aKJYSXY_GA5PDecUhZHACui8p56wqxjLmqia2JFWPa7ji8YfVXxmWsKjlTclJNrU&usqp=CAU">
+            <h4>Burger</h4>
+            <button>Order</button>
+          </div>
+          <div class="item">
+            <img src="https://i.pinimg.com/736x/3e/f5/c0/3ef5c041ff1191af641462920b0e493b.jpg">
+            <h4>Desserts</h4>
+            <button>Order</button>
+          </div>
+          <div class="item">
+            <img src="https://b.zmtcdn.com/data/pictures/chains/4/21103434/fc42ef9df56b1a1b701546f0b8cd8d5e.jpg">
+            <h4>Chineese Noodles</h4>
+            <button>Order</button>
+          </div>
+          <div class="item">
+            
+              <img src="https://w0.peakpx.com/wallpaper/363/523/HD-wallpaper-smoky-barbecue-picnic-board-restaurant-ribs-plate.jpg">
+              <h4>smoky barbecue</h4>
+              <button>Order</button>
+            </div>
+            <div class="item">
+            
+              <img src="https://img.freepik.com/premium-photo/plate-food-including-chicken-french-fries-plate-food_1262102-1303.jpg?semt=ais_hybrid">
+              <h4>Fried Chicken</h4>
+              <button>Order</button>
+            </div>
+            
+          
+        </section>
+    </body>
+</html>

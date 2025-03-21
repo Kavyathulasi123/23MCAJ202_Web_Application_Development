@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Registration Form
+        </title>
+        
+    </head>
+    
+        <style>
+        h1{
+            color:deeppink;
+            text-decoration:underline;
+            text-decoration-color: darkgreen;
+            
+        }
+        body{
+            background-image:url(https://plus.unsplash.com/premium_photo-1681487916420-8f50a06eb60e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bG9naW58ZW58MHx8MHx8fDA%3D);
+            background-size:cover;
+            background-position:center;
+            background-repeat: no-repeat;
+            font-size: 20px;
+        }
+        
+        input[type=text],input[type=email],input[type=tel],input[type=password]{
+             padding: 10px 12px;
+            border-color:red;
+            color: blue;
+            background-color: aqua;
+            width: 25%;
+            height: 25px;
+            font-size: 15px;
+            
+        }
+        select{
+            width:25%;
+            padding: 10px 12px;
+            border-color:red;
+            color:blue;
+            font-size: 15px;
+        }
+        input[type=reset],input[type=submit]{
+            color:black;
+            background-color:darkgreen;
+            padding: 8px 10px;
+        }
+    </style>
+    
+    <body>
+           
+           
+        <h1>RegistrationForm</h1>
+         <form action="reg2.html">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" placeholder="Enter your first  name"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" placeholder="Enter your last name"><br><br>
+            
+            <label for="Email">Enter email:</label>
+            <input type="email" id="Email" placeholder="Enter your email"><br><br>
+            <label for="phone">Enter phone:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone"><br><br>
+            
+            <label for="Country">Country:</label>
+            <select id="Country" ><br><br>
+            <option value="Australia">Australia</option>
+            <option value="India">India</option>
+            <option value="Canada">Canada</option>
+
+             </select><br><br>
+            
+            <label for="gender">select gender:</label>
+            <input type="radio" id="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="male">
+            <label for="female">Female</label>
+            <input type="radio" id="female">
+            <label for="others">others</label><br><br>
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password"><br><br>
+           <label for="password">Confirm Password:</label>
+            <input type="password" id="password"><br><br>
+            
+
+            
+            
+            <input type="reset" value="Reset" >
+             
+            <input type="submit" value="Submit" > 
+            
+     </form>
+    </body>  
+</html>
