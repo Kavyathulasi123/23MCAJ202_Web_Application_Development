@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>
+            blog comment form
+        </title>
+        
+    <style>
+        div{                                         
+            background-color: lightgray;
+            width:400px;
+            padding:15px;
+            margin-left: 500px;
+           
+        }
+       
+        input[type=text],input[type=email]{
+            border-color:red;
+            color: blue;
+            width: 90%;
+            height: 40px;
+            font-size: 15px;
+            margin-left:10px ;
+
+            
+        }
+        h1{
+           
+            margin-left:20px ;
+            display: inline; white-space:nowrap;
+            font-size: 45px;
+            color: deeppink;
+            
+        }
+        input,textarea{
+            border-color:red;
+            color: black;
+            width: 90%;
+            height: 100px;
+            font-size: 15px;
+            margin-left:12px ;
+            border-radius: 5px;
+            border:1px solid tomato;
+
+            
+        }
+        label{
+            font-weight: bold;
+            display: block;
+            margin-left:10x ;
+            width: 200px;
+            font-size: 25px;
+
+        }
+        button{
+            margin-left:100px ; 
+            background-color:darkgreen;
+            color: aliceblue;
+            width:100px;
+
+        }
+
+    
+
+    </style>
+</head>
+
+<body>
+    <div><br>
+    <h1>Leave a comment</h1><br><br>
+    <form action="blog2.html">
+    <label for="name"> Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" name="name" required><br><br>
+    <label for="Email">Enter email:</label>
+     <input type="email" id="Email" placeholder="Enter your email" name="e mail" required><br><br>
+     <label for="comment">Comment:</label>
+     <textarea id="comment" name="Comment" required></textarea><br><br>
+     <button type="submit" >Submit comment</button>
+     </div>
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Onclick Attribute</title>
+  </head>
+  <style>
+    h1 { /*styles the heading*/
+      margin-left: 500px;
+      text-decoration: underline;
+      color: darkblue;
+      font-weight: bold;
+      font-size: 40px;
+    }
+    button{
+      width: 200px;
+      padding: 10px;
+      margin-left: 450px;
+      font-size: 20px;
+      background-color: darkgreen;
+      border: white;
+    }
+  </style>
+  <body>  
+    <h1>PARIS</h1>
+    
+    <img src="https://i0.wp.com/globerovers.com/wp-content/uploads/2023/02/Paris-France-at-night-Eiffel-Tower-2.jpg?resize=533%2C800&ssl=1" style="width: 200px; margin-left: 150px;">
+    <img src="https://myfrenchcountryhomemagazine.com/wp-content/uploads/2021/11/alexander-III-featured.jpg" style="width:300px;margin-left:80px">
+    <img src="https://worldinparis.com/wp-content/uploads/2022/04/Orsay-Museum-Paris.jpg" style="width:400px;margin-left:50px;">
+    
+    <p style="color: black; font-size: 30px;display: inline; white-space:nowrap;">What makes Paris the "City of Love" is not just its beautiful sights, but the way the city makes people feel.</p>
+    <r><br>
+    <p style="color: black; font-size: 30px;display: inline; white-space:nowrap;">Paris invites people to slow down, to savour each moment, and to fall in love not only with each other but with the city itself.</p>
+    <br><br>
+    <p style="color: black; font-size: 30px;display: inline; white-space:nowrap;">“The City of Light” (“la Ville Lumière”), earned during the Enlightenment, remains appropriate,</p>
+    <br><br>
+    <p style="color: black; font-size: 30px;display: inline; white-space:nowrap;">for Paris has retained its importance as a centre for education and intellectual pursuits.</p>
+    <br><br>
+  
+    <button onclick="changeColor()">Click me</button>  
+
+    <script>
+      function changeColor() { //onclick tells browser to call the changecolor function */
+        //generates a random color*/
+        const randomColor = Math.floor(Math.random() * 360); // math.random generates a random number between zero and one/*
+        /*math.floor removes decimals*/
+        document.body.style.backgroundColor = `hsl(${randomColor}, 70%, 70%)`; //hue saturation lightness hue represents the type of color,saturation is the intensity of color
+      
+      }
+    </script>
+  </body>
+</html

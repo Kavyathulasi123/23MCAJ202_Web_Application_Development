@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html> <!---root of html page-->
+<head>
+    <title>Symmetric Matrix Check</title>
+    <script>  /*used to include javascript */
+    /*the function to check whether the matrix is symmetric or not*/
+        function checkSymmetric() {
+            let size = parseInt(document.getElementById("size").value); /*finds the input box where the user enters the matrix size*/
+            /*.value gets the number entered by the user*/
+            /*creating a 2D array*/
+            let matrix = [];
+            /* rows of the matrix*/
+            for (let i = 0; i < size; i++) { 
+                matrix[i] = [];  /*creates a new row inside matrix*/
+                /*columns of the matrix*/
+                for (let j = 0; j < size; j++) {
+                    matrix[i][j] = parseInt(document.getElementById(`cell-${i}-${j}`).value) || 0; /*find the input box for each cell*/
+                }
+            }
+            /*checking the symmetry*/
+            for (let i = 0; i < size; i++) {
+                for (let j = 0; j < size; j++) {
+                    if (matrix[i][j] !== matrix[j][i]) {
+                        document.getElementById("result").innerText = "The matrix is not symmetric.";
+                        return; /*stops the function*/
+                    }
+                }
+            }
+            /*if the loop completes without finding an asymmetry,it updates by saying not symmetry*/
+            document.getElementById("result").innerText = "The matrix is symmetric.";
+        }
+    </script>
+</head>
+<body>
+    <h2>Check if a Matrix is Symmetric</h2><!---input type lets the user enter the size-->
+    <label>Enter matrix size (n x n): </label>       <!--id helps javascript find the input field-->
+    <input type="number" id="size" min="1" value="3">
+
+    <button onclick="createMatrix()">Create Matrix</button><!---function creates the input fields based on the matrix size-->
+    
+    <div id="matrixInput"></div>   <!---div is where javascript will create input fields for the matrix-->
+    <button onclick="checkSymmetric()">Check Symmetry</button>
+    <p id="result"></p>
+    
+    <script>
+        function createMatrix() {
+            let size = document.getElementById("size").value;/*find the input box and gets the value of size*/
+            let matrixDiv = document.getElementById("matrixInput"); /*matrix inputs will be placed*/
+            matrixDiv.innerHTML = "<h3>Enter Matrix Values:</h3>"; /*clears old content and adds heading above the matrix*/
+            
+            let table = "";
+            for (let i = 0; i < size; i++) {  /*i creates rows and j creates columns*/
+                for (let j = 0; j < size; j++) {
+                    table += `<input type="number" id="cell-${i}-${j}" style="width:50px;">`;/*creates a small input box for each number in matrix*/
+                }                                                                /*id gives each input a unique id*/
+                table += "<br>";
+            }
+            matrixDiv.innerHTML += table;  /*updates the  with the matrix inputs*/
+        }
+    </script>
+</body>
+</html>

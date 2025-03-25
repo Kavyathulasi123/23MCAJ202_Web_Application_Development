@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Javascript
+        </title>
+    </head>
+    <style>
+        
+        img{
+            margin-top: 100px;    /*pushes the image down from the top by 100 pixels*/
+            width: 30%;     /*sets the image width*/
+            
+        }
+        p{
+            font-size: 70px;  /*makes the text large*/
+           color: crimson;   /*sets the text color*/
+           text-align: center; /*centers the text*/
+        }
+        /*styling the page background*/
+        body{
+            margin-left:150px;     /*moves everything 150px to the right*/
+            align-items: center;    
+            display:flex ;         
+            background-image: url(https://cdn.pixabay.com/photo/2016/02/23/07/37/wall-1217083_1280.jpg);
+            background-size:cover;  /*ensures the background image covers the entire screen*/
+            background-position:center;   /*centers the background image*/
+             background-repeat: no-repeat;  /*prevents thr background image from repeating*/
+        }
+    </style>
+        
+     
+   <body>
+       
+          <img id="hoverImage"src="https://external-preview.redd.it/E4FbHxekYcpF0a8K7kuxH-YaizXet4KER0tA3hBuckk.jpg?auto=webp&s=6a7cf9bf95548cda7a92d8360a899aa8406cb2c4" width="20%"
+        
+        onmouseover="changecontent('https://images.unsplash.com/photo-1562569633-622303bafef5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5ncnklMjBsaW9ufGVufDB8fDB8fHww','He is made' )" 
+        onmouseout="changecontent('https://external-preview.redd.it/E4FbHxekYcpF0a8K7kuxH-YaizXet4KER0tA3hBuckk.jpg?auto=webp&s=6a7cf9bf95548cda7a92d8360a899aa8406cb2c4','A king is not born')">
+       <p id="description">A king is not born  </p><!---id allows javascript to change the text--->
+       <script>
+            function changecontent(newImage, newText){
+                document.getElementById("hoverImage").src=newImage;/*change image*/
+                document.getElementById("description").innerText=newText;/*change text*/
+
+            }
+        </script>
+        
+    </body>
+</html>
