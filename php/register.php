@@ -27,7 +27,7 @@
 $nameErr = $emailErr = $phonenumberErr = $genderErr = $countryErr = $passwordErr = $confirmpasswordErr = "";
 $name = $email = $phonenumber = $gender = $country = $password = $confirmpassword = "";
 //this checks if the form has been submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {  //gets the method used to send the form in this case post means the form data is sent to server
+if ($_SERVER["REQUEST_METHOD"] == "POST") {  //gets the method used to send the form ,in this case post means the form data is sent to server
     // Name Validation
     if (empty($_POST["name"])) {    //checks if the name is empty
         $nameErr = "Name is required";
